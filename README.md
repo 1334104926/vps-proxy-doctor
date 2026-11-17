@@ -16,7 +16,13 @@
 
 ## 安装
 
-克隆下来，把 `skills/vps-proxy-doctor/` 复制到 skill 目录：
+用 DSH 的话一条命令：
+
+```bash
+dsh plugin add 1334104926/vps-proxy-doctor
+```
+
+不用 DSH，或者想手动装，把 skill 目录复制过去：
 
 ```bash
 git clone https://github.com/1334104926/vps-proxy-doctor.git
@@ -36,6 +42,9 @@ Claude Code 用 `~/.claude/skills/`，路径同理。
 ## 里面有什么
 
 ```
+package.json                 声明 dsh.bundle，让 `dsh plugin add` 能装
+cordis.patch.yml             插件挂载点
+index.js                     把 skills/ 注册成一个 skill 提供方
 skills/vps-proxy-doctor/
 ├── SKILL.md                 主文件，先读这个
 ├── references/
