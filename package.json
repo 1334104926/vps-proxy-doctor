@@ -4,9 +4,29 @@
   "description": "Self-hosted VPS proxy troubleshooting skill for DSH: phone Clash Meta and Windows Clash Verge.",
   "type": "module",
   "main": "index.js",
-  "files": ["index.js", "cordis.patch.yml", "skills/", "README.md", "LICENSE"],
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
   "license": "MIT",
-  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "skill", "clash", "proxy"],
-  "peerDependencies": {"@deepseek-ai/dsh-skill-filesystem": ">=0.1.0-rc.6 <0.3.0"},
-  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}}
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "clash",
+    "proxy"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill-filesystem": ">=0.1.0-rc.6 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
 }

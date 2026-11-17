@@ -45,6 +45,7 @@ Claude Code 用 `~/.claude/skills/`，路径同理。
 package.json                 声明 dsh.bundle，让 `dsh plugin add` 能装
 cordis.patch.yml             插件挂载点
 index.js                     把 skills/ 注册成一个 skill 提供方
+examples/walkthrough.md      一次真实的排查过程
 skills/vps-proxy-doctor/
 ├── SKILL.md                 主文件，先读这个
 ├── references/
@@ -58,6 +59,8 @@ skills/vps-proxy-doctor/
 ```
 
 三个脚本都只做探测，不改任何设置。
+
+想看一遍真实的排查过程，读 [examples/walkthrough.md](examples/walkthrough.md)。
 
 ## 怎么用
 
